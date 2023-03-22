@@ -19,9 +19,7 @@ can.strokeStyle = "black"
 
 const fullGenerate = () => {
   document.querySelector('#generation').textContent = ''
-  can.rect(0, 0, canvas.width * 2, canvas.height * 2)
-  can.fillStyle = 'white'
-  can.fill()
+  can.clearRect(0, 0, canvas.width, canvas.height);
   let generation
   if (custom === undefined) {
     generation = algorithm(cityCount, boardSize, batchAmount, totalGenerations, bruteForceValue, custom)
