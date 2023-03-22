@@ -19,6 +19,9 @@ can.strokeStyle = "black"
 
 const fullGenerate = () => {
   document.querySelector('#generation').textContent = ''
+  can.rect(0, 0, canvas.width * 2, canvas.height * 2)
+  can.fillStyle = 'white'
+  can.fill()
   let generation
   if (custom === undefined) {
     generation = algorithm(cityCount, boardSize, batchAmount, totalGenerations, bruteForceValue, custom)
@@ -40,9 +43,6 @@ const fullGenerate = () => {
 }
 
 const drawPath = (pandf) => {
-  can.rect(boardSize / 2, boardSize / 2, canvas.height, canvas.width)
-  can.fillStyle = 'white'
-  can.fill()
   can.beginPath()
   can.strokeStyle = "black"
   can.moveTo(pandf.path[0].x, pandf.path[0].y)
