@@ -1,17 +1,21 @@
 body {
-    width: 40em;
-    margin: 1in auto;
-  }
-  
-  h1 {
-    font-family: sans-serif;
-  }
-  
-  p {
-    font-size: 18px;
-  }
-  
-  
-  canvas {
-    border: 1px solid black;
-  }  
+  width: 40em;
+  margin: 1in auto;
+}
+
+h1 {
+  font-family: 'Trebuchet MS';
+}
+
+p {
+  font-size: 18px;
+  font-family: 'Trebuchet MS';
+}
+
+canvas {
+  border: 1px solid black;
+}
+
+#mona-lisa {
+  display: none;
+}
